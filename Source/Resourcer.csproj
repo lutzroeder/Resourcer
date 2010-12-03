@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0095CB30-1358-4BB3-AC7C-905CF75C4408}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Resourcer</RootNamespace>
+    <AssemblyName>Resourcer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Build\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application.cs" />
+    <Compile Include="ApplicationWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CommandBarResource.cs" />
+    <Compile Include="CommandBar\CommandBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarCollection.cs" />
+    <Compile Include="CommandBar\CommandBarComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarItemCollection.cs" />
+    <Compile Include="CommandBar\CommandBarManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarStyle.cs" />
+    <Compile Include="CommandBar\CommandBarTypeConverter.cs" />
+    <Compile Include="CommandBar\NativeMethods.cs" />
+    <Compile Include="CommandBar\TextGraphics.cs" />
+    <Compile Include="CommandLine.cs" />
+    <Compile Include="Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceItem.cs" />
+    <Compile Include="ResourceViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StringTable.cs" />
+    <EmbeddedResource Include="Application.ico">
+      <LogicalName>Resourcer.Application.ico</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application.png">
+      <LogicalName>Resourcer.Application.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browser.png">
+      <LogicalName>Resourcer.Browser.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBar.png">
+      <LogicalName>Resourcer.CommandBar.png</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

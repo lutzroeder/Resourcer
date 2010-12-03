@@ -1,0 +1,6 @@
+[assembly: System.Reflection.AssemblyTitle(".NET Resourcer")]
+[assembly: System.Reflection.AssemblyVersion("4.2.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersion("4.2.0.0")]
+[assembly: System.Reflection.AssemblyCopyright("Copyright \x0A9 2000-2004 Lutz Roeder.\nAll rights reserved.")]
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Runtime.InteropServices.ComVisible(true)]
