@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resourcer", "Resourcer.csproj", "{0095CB30-1358-4BB3-AC7C-905CF75C4408}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0095CB30-1358-4BB3-AC7C-905CF75C4408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0095CB30-1358-4BB3-AC7C-905CF75C4408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0095CB30-1358-4BB3-AC7C-905CF75C4408}.Release|Any CPU.ActiveCfg = Release|x86
+		{0095CB30-1358-4BB3-AC7C-905CF75C4408}.Release|Any CPU.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
