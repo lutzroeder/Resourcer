@@ -4,4 +4,4 @@ Resourcer is an editor for .resources and .resx files used with the .NET platfor
 
 Resourcer allows editing of strings, import of bitmaps and merging of resources from different sources.
 
-<a href="https://www.lutzroeder.com/dotnet"><img src="Media/Screenshot.png" alt="Screenshot" align="left" width="466"></a>
+<a href="https://www.lutzroeder.com/dotnet"><img src=".github/screenshot.png" alt="Screenshot" align="left" width="466"></a>
